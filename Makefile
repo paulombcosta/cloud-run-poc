@@ -6,3 +6,7 @@ push:
 	gcloud builds submit --tag gcr.io/coloud-run-poc/helloworld
 run-cloud:
 	gcloud beta run deploy --image gcr.io/coloud-run-poc/helloworld
+list:
+	gcloud beta run services list
+delete:
+	gcloud beta run services delete helloworld
